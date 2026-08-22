@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vyapini Biotech | Science • Innovation • Life</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,22 +54,18 @@
 <body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brandGreen-100 selection:text-brandGreen-600">
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all shadow-sm">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Brand Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="relative w-12 h-12 flex items-center justify-center bg-gradient-to-br from-navy-800 via-brandGreen-500 to-brandOrange-500 rounded-xl p-0.5 shadow-md group-hover:scale-105 transition-transform">
-                        <div class="w-full h-full bg-white rounded-[10px] flex items-center justify-center">
-                            <i class="fa-solid fa-dna text-xl text-navy-800 group-hover:rotate-45 transition-transform duration-500"></i>
-                        </div>
-                    </div>
-                    <div>
+            <div class="flex justify-between items-center h-24">
+                <!-- Brand Logo Image -->
+                <a href="#" class="flex items-center group py-2">
+                    <img src="logo.png" alt="Vyapini Biotech Logo" class="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" onerror="this.style.display='none'; document.getElementById('fallback-logo').classList.remove('hidden');">
+                    
+                    <!-- Fallback if image path is not yet added -->
+                    <div id="fallback-logo" class="hidden flex items-center gap-3">
+                        <div class="w-12 h-12 flex items-center justify-center bg-navy-800 rounded-xl text-white font-bold text-xl">V</div>
                         <div class="font-heading font-extrabold text-2xl tracking-tight text-navy-900 leading-none">
                             VYAPINI <span class="text-brandGreen-500">BIOTECH</span>
-                        </div>
-                        <div class="text-[10px] font-semibold tracking-widest text-slate-500 uppercase mt-1">
-                            SCIENCE • INNOVATION • LIFE
                         </div>
                     </div>
                 </a>
@@ -85,7 +82,7 @@
                 <!-- CTA -->
                 <div class="hidden sm:flex items-center gap-4">
                     <a href="#apply" class="bg-navy-800 hover:bg-navy-900 text-white font-medium text-sm px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center gap-2">
-                        <span>Aptitude Test Apply</span>
+                        <span>Apply for Batch</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                 </div>
@@ -109,7 +106,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-bg pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden relative">
+    <section class="hero-bg pt-14 pb-24 md:pt-20 md:pb-32 overflow-hidden relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
@@ -146,7 +143,7 @@
                         </div>
                         <div>
                             <div class="font-heading font-bold text-2xl text-navy-900">20+ Yrs</div>
-                            <p class="text-xs text-slate-500 mt-0.5">Clinical Industry Experience</p>
+                            <p class="text-xs text-slate-500 mt-0.5">Clinical Diagnostics Heritage</p>
                         </div>
                         <div>
                             <div class="font-heading font-bold text-2xl text-navy-900">100%</div>
@@ -155,26 +152,27 @@
                     </div>
                 </div>
 
-                <!-- Hero Graphic Visual -->
+                <!-- Hero Card Visual with Centered Logo Watermark/Badge -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
                         <div class="bg-gradient-to-br from-navy-900 via-navy-800 to-brandGreen-600 rounded-3xl p-8 text-white shadow-2xl relative overflow-hidden">
-                            <!-- Background pattern -->
-                            <div class="absolute -right-12 -bottom-12 opacity-10 text-9xl text-white">
-                                <i class="fa-solid fa-vial"></i>
-                            </div>
-
-                            <div class="flex items-center gap-3 mb-6">
-                                <span class="w-3 h-3 rounded-full bg-brandOrange-500 animate-ping"></span>
-                                <span class="text-xs font-mono uppercase tracking-widest text-slate-300">Vyapini Core Model</span>
+                            
+                            <div class="flex justify-between items-center mb-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-brandOrange-500 animate-ping"></span>
+                                    <span class="text-xs font-mono uppercase tracking-widest text-slate-300">Core Training Model</span>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur px-3 py-1 rounded-full text-[11px] font-semibold text-brandGreen-100">
+                                    Science • Innovation • Life
+                                </div>
                             </div>
 
                             <h3 class="font-heading font-bold text-2xl mb-4 leading-snug">
-                                Interdisciplinary Biotechnology & Electronics Integration
+                                Biotech, Electronics & Data Analysis Under One Roof
                             </h3>
 
                             <p class="text-sm text-slate-300 leading-relaxed mb-6">
-                                Our professionals learn real-world biotechnology paired with basic electronics, programming, and data analysis to solve critical healthcare and ecological gaps.
+                                Providing students and researchers direct platform access to solve healthcare challenges with indigenous, sustainable alternatives.
                             </p>
 
                             <div class="space-y-3">
@@ -182,19 +180,19 @@
                                     <div class="w-8 h-8 rounded-lg bg-brandGreen-500/30 flex items-center justify-center text-brandGreen-500">
                                         <i class="fa-solid fa-leaf"></i>
                                     </div>
-                                    <span class="text-xs font-medium">Eco-friendly Diagnostics Innovation</span>
+                                    <span class="text-xs font-medium">Eco-friendly Diagnostics & Waste Solutions</span>
                                 </div>
                                 <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-xl border border-white/10 flex items-center gap-3">
                                     <div class="w-8 h-8 rounded-lg bg-brandOrange-500/30 flex items-center justify-center text-brandOrange-500">
-                                        <i class="fa-solid fa-laptop-code"></i>
+                                        <i class="fa-solid fa-microchip"></i>
                                     </div>
-                                    <span class="text-xs font-medium">Biotech Programming & Data Analysis</span>
+                                    <span class="text-xs font-medium">Microcontroller & Electronics Interfacing</span>
                                 </div>
                                 <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-xl border border-white/10 flex items-center gap-3">
                                     <div class="w-8 h-8 rounded-lg bg-blue-500/30 flex items-center justify-center text-blue-400">
-                                        <i class="fa-solid fa-file-lines"></i>
+                                        <i class="fa-solid fa-file-signature"></i>
                                     </div>
-                                    <span class="text-xs font-medium">Research Paper Publishing Mentorship</span>
+                                    <span class="text-xs font-medium">Hackathon Entry & Paper Publishing</span>
                                 </div>
                             </div>
                         </div>
@@ -205,55 +203,52 @@
         </div>
     </section>
 
-    <!-- Why Vyapini Biotech Section -->
+    <!-- Why Vyapini Section -->
     <section id="about" class="py-20 bg-white border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-brandGreen-600 mb-2">A Strategic Perspective</h2>
                 <h3 class="font-heading font-bold text-3xl sm:text-4xl text-navy-950">Why Vyapini Biotech Was Founded</h3>
                 <p class="text-slate-600 mt-4 leading-relaxed">
-                    Rooted in over two decades of clinical diagnostics expertise across product management, troubleshooting, equipment design, and reagent manufacturing.
+                    Rooted in over 20 years of clinical diagnostic experience spanning product management, troubleshooting, equipment design, and reagent manufacturing.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200/80 hover:shadow-lg transition-all group">
                     <div class="w-14 h-14 rounded-xl bg-navy-800/10 text-navy-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-navy-800 group-hover:text-white transition-all">
                         <i class="fa-solid fa-award"></i>
                     </div>
-                    <h4 class="font-heading font-bold text-xl text-navy-900 mb-3">20+ Years Diagnostic Heritage</h4>
+                    <h4 class="font-heading font-bold text-xl text-navy-900 mb-3">20+ Years Experience</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Deep industry insight in product troubleshooting, reagent formulation, and diagnostic equipment design built over two decades of hands-on work.
+                        Extensive industry expertise in diagnostic product design, reagent manufacturing, and technical troubleshooting.
                     </p>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200/80 hover:shadow-lg transition-all group">
                     <div class="w-14 h-14 rounded-xl bg-brandOrange-500/10 text-brandOrange-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brandOrange-500 group-hover:text-white transition-all">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                     </div>
-                    <h4 class="font-heading font-bold text-xl text-navy-900 mb-3">The Import & Waste Challenge</h4>
+                    <h4 class="font-heading font-bold text-xl text-navy-900 mb-3">The Import & Waste Dilemma</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Most equipment and reagents are imported for short-term cost efficiency. Non-environmentally friendly materials with strict expiries frequently end up as hazardous landfill waste.
+                        Machinery and reagents imported due to short-term costs are often hazardous to landfills with rigid shelf lives.
                     </p>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200/80 hover:shadow-lg transition-all group">
                     <div class="w-14 h-14 rounded-xl bg-brandGreen-500/10 text-brandGreen-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brandGreen-500 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-earth-americas"></i>
+                        <i class="fa-solid fa-seedling"></i>
                     </div>
-                    <h4 class="font-heading font-bold text-xl text-navy-900 mb-3">Empowering Local Leaders</h4>
+                    <h4 class="font-heading font-bold text-xl text-navy-900 mb-3">Core Biotech Leadership</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        By thoroughly training students in core biotechnology and sustainable practices, we unlock indigenous innovation to solve global environmental and diagnostic problems.
+                        Training students in fundamental biotechnological problem-solving creates indigenous, sustainable world leaders.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Gap vs How We Fill It -->
+    <!-- The Gap & Solution -->
     <section id="gap-solution" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -271,25 +266,25 @@
                         <div class="w-10 h-10 rounded-lg bg-red-100 text-red-600 flex items-center justify-center text-lg">
                             <i class="fa-solid fa-xmark"></i>
                         </div>
-                        <h4 class="font-heading font-bold text-2xl text-navy-900">Challenges faced by professionals</h4>
+                        <h4 class="font-heading font-bold text-2xl text-navy-900">Challenges Facing Professionals</h4>
                     </div>
 
                     <ul class="space-y-4 text-slate-600 text-sm">
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-xmark text-red-400 text-base mt-0.5"></i>
-                            <span>Talented and passionate candidates lack access to top-tier research institutes.</span>
+                            <span>Talented individuals lack access to top-tier research lab equipment.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-xmark text-red-400 text-base mt-0.5"></i>
-                            <span>Big ideas go unnoticed due to lack of mentorship, exposure, or execution platforms.</span>
+                            <span>Promising ideas fail to get the attention and execution mentorship they deserve.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-xmark text-red-400 text-base mt-0.5"></i>
-                            <span>Technicians, lab personnel, and educators face restricted interdisciplinary project exposure.</span>
+                            <span>Restricted interdisciplinary exposure across bio-computation and hardware.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-xmark text-red-400 text-base mt-0.5"></i>
-                            <span>Overcrowded classrooms and labs with 10+ students per batch prevent individual attention.</span>
+                            <span>Overcrowded labs with 10+ students per batch preventing deep practical mentorship.</span>
                         </li>
                     </ul>
                 </div>
@@ -303,25 +298,25 @@
                         <div class="w-10 h-10 rounded-lg bg-brandGreen-500/20 text-brandGreen-500 flex items-center justify-center text-lg">
                             <i class="fa-solid fa-check"></i>
                         </div>
-                        <h4 class="font-heading font-bold text-2xl text-white">How We Bridge The Gap</h4>
+                        <h4 class="font-heading font-bold text-2xl text-white">How We Fill The Gap</h4>
                     </div>
 
                     <ul class="space-y-4 text-slate-300 text-sm">
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-check text-brandGreen-500 text-base mt-0.5"></i>
-                            <span>Like-minded individuals connect to collaborate directly on real-world projects.</span>
+                            <span>Connecting like-minded minds to work together collaboratively on real problems.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-check text-brandGreen-500 text-base mt-0.5"></i>
-                            <span>Expert guidance from specialists across biotechnology, electronics, and software.</span>
+                            <span>End-to-end guidance from industry experts across multiple specializations.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-check text-brandGreen-500 text-base mt-0.5"></i>
-                            <span>Project submission support for national government hackathons, conferences, and publications.</span>
+                            <span>Project submission support for national hackathons, conferences, and journals.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-circle-check text-brandGreen-500 text-base mt-0.5"></i>
-                            <span class="font-semibold text-white">Strict Batch Limit: Maximum 4 students selected through an aptitude test.</span>
+                            <span class="font-semibold text-white">Strict Cohort Cap: Only 4 students per batch, selected by aptitude test.</span>
                         </li>
                     </ul>
                 </div>
@@ -329,7 +324,7 @@
         </div>
     </section>
 
-    <!-- Training Framework & Skill Building -->
+    <!-- Professional Training & Skills -->
     <section id="trainings" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -337,16 +332,16 @@
                 <div class="lg:col-span-6 space-y-6">
                     <span class="text-xs font-bold uppercase tracking-widest text-brandGreen-600">B2C Professional Training</span>
                     <h2 class="font-heading font-bold text-3xl sm:text-4xl text-navy-950">How We Train Our Professionals</h2>
-                    <p class="text-slate-600 leading-relaxed">
-                        Our pedagogical philosophy revolves around hands-on autonomy. We don't just teach theory—we provide full access to equipment and nurture critical thinking from concept to implementation.
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        We give trainees free hands to work on equipment, explore, and research fundamental concepts thoroughly before formulating solutions.
                     </p>
 
                     <div class="space-y-4">
                         <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70 flex gap-4">
                             <div class="w-10 h-10 rounded-lg bg-navy-800 text-white flex-shrink-0 flex items-center justify-center font-bold">1</div>
                             <div>
-                                <h4 class="font-bold text-navy-900 text-base">Hands-on Exploration</h4>
-                                <p class="text-xs text-slate-600 mt-1">Free-hand equipment access to explore, test, and research fundamental concepts thoroughly.</p>
+                                <h4 class="font-bold text-navy-900 text-base">Hands-on Laboratory Autonomy</h4>
+                                <p class="text-xs text-slate-600 mt-1">Direct equipment handling and experimentation without artificial restrictions.</p>
                             </div>
                         </div>
 
@@ -354,50 +349,49 @@
                             <div class="w-10 h-10 rounded-lg bg-navy-800 text-white flex-shrink-0 flex items-center justify-center font-bold">2</div>
                             <div>
                                 <h4 class="font-bold text-navy-900 text-base">Research Thought Process</h4>
-                                <p class="text-xs text-slate-600 mt-1">Inculcating structured methodology for approaching new ideas, execution, and research paper publication.</p>
+                                <p class="text-xs text-slate-600 mt-1">Inculcating the discipline to research, validate new concepts, and publish scientific papers.</p>
                             </div>
                         </div>
 
                         <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70 flex gap-4">
                             <div class="w-10 h-10 rounded-lg bg-navy-800 text-white flex-shrink-0 flex items-center justify-center font-bold">3</div>
                             <div>
-                                <h4 class="font-bold text-navy-900 text-base">Electronics & Programming Integration</h4>
-                                <p class="text-xs text-slate-600 mt-1">Biotechnologists master basic hardware electronics, programming, and data analysis for smart biotech applications.</p>
+                                <h4 class="font-bold text-navy-900 text-base">Electronics, Code & Data Analysis</h4>
+                                <p class="text-xs text-slate-600 mt-1">Biotechnologists master basic electronics, scripting, and data analysis for diagnostics.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Beyond Technical Skills Grid -->
                 <div class="lg:col-span-6 bg-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-800">
-                    <h3 class="font-heading font-bold text-2xl text-white mb-2">What We Build Other Than Tech Skills</h3>
-                    <p class="text-slate-400 text-sm mb-8">Preparing well-rounded leaders ready for industrial innovation and entrepreneurship.</p>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-2">Building Beyond Technical Skills</h3>
+                    <p class="text-slate-400 text-sm mb-8">Shaping well-rounded leaders ready for industrial innovation and entrepreneurship.</p>
 
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
-                            <i class="fa-solid fa-display text-brandOrange-500 text-xl mb-2"></i>
+                            <i class="fa-solid fa-chalkboard-user text-brandOrange-500 text-xl mb-2"></i>
                             <h5 class="font-bold text-white text-sm">Presentation Skills</h5>
-                            <p class="text-xs text-slate-400 mt-1">Articulating complex biological data effectively.</p>
+                            <p class="text-xs text-slate-400 mt-1">Articulating complex data clearly.</p>
                         </div>
                         <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
-                            <i class="fa-solid fa-brain text-brandGreen-500 text-xl mb-2"></i>
-                            <h5 class="font-bold text-white text-sm">Real & Practical Knowledge</h5>
-                            <p class="text-xs text-slate-400 mt-1">Moving beyond textbook rote learning.</p>
+                            <i class="fa-solid fa-lightbulb text-brandGreen-500 text-xl mb-2"></i>
+                            <h5 class="font-bold text-white text-sm">Real Practical Knowledge</h5>
+                            <p class="text-xs text-slate-400 mt-1">Grounded diagnostic problem-solving.</p>
                         </div>
                         <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
-                            <i class="fa-solid fa-comments text-blue-400 text-xl mb-2"></i>
-                            <h5 class="font-bold text-white text-sm">Group Dynamics & GDs</h5>
-                            <p class="text-xs text-slate-400 mt-1">Collaborative problem solving and debate.</p>
+                            <i class="fa-solid fa-people-group text-blue-400 text-xl mb-2"></i>
+                            <h5 class="font-bold text-white text-sm">Group Discussions & Debate</h5>
+                            <p class="text-xs text-slate-400 mt-1">Collaborative critical thinking.</p>
                         </div>
                         <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
-                            <i class="fa-solid fa-industry text-purple-400 text-xl mb-2"></i>
-                            <h5 class="font-bold text-white text-sm">Industry Relevance</h5>
-                            <p class="text-xs text-slate-400 mt-1">Building commercial and scalable solutions.</p>
+                            <i class="fa-solid fa-building-circle-check text-purple-400 text-xl mb-2"></i>
+                            <h5 class="font-bold text-white text-sm">Industry-Relevant Insights</h5>
+                            <p class="text-xs text-slate-400 mt-1">Commercial manufacturing standards.</p>
                         </div>
                         <div class="bg-white/5 border border-white/10 p-4 rounded-xl sm:col-span-2">
-                            <i class="fa-solid fa-shield-halved text-yellow-400 text-xl mb-2"></i>
+                            <i class="fa-solid fa-shield-heart text-yellow-400 text-xl mb-2"></i>
                             <h5 class="font-bold text-white text-sm">Confidence to Build Industries</h5>
-                            <p class="text-xs text-slate-400 mt-1">Empowering students to establish their own ventures and research facilities.</p>
+                            <p class="text-xs text-slate-400 mt-1">Empowering individuals to initiate indigenous ventures and independent labs.</p>
                         </div>
                     </div>
                 </div>
@@ -406,56 +400,53 @@
         </div>
     </section>
 
-    <!-- B2B Offerings Section -->
+    <!-- B2B Partnerships -->
     <section id="b2b" class="py-20 bg-slate-50 border-t border-slate-200/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-brandOrange-500">Business to Business Solutions</span>
-                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-navy-950 mt-1">B2B Institutional Partnerships</h2>
+                <span class="text-xs font-bold uppercase tracking-widest text-brandOrange-500">Business To Business Solutions</span>
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-navy-950 mt-1">B2B Institutional Tie-ups</h2>
                 <p class="text-slate-600 mt-3 text-sm sm:text-base">
-                    Collaborating with clinical diagnostic facilities, educational institutions, and research organizations for mutual growth.
+                    Partnering with diagnostic centres, academic institutions, and enterprises.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
                     <div class="w-12 h-12 rounded-xl bg-navy-800/10 text-navy-800 flex items-center justify-center text-xl mb-6">
                         <i class="fa-solid fa-vials"></i>
                     </div>
-                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Diagnostic Laboratory Tie-ups</h3>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Diagnostic Lab Tie-ups</h3>
                     <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Partnering with high-end diagnostic laboratories for shared advanced equipment usage, specialized testing, and collaborative research initiatives.
+                        Connecting laboratories with high-end diagnostic and analytical equipment for mutual clinical diagnostics and advanced research.
                     </p>
-                    <a href="#contact" class="text-xs font-bold text-navy-800 hover:text-brandGreen-500 inline-flex items-center gap-1">
+                    <a href="#apply" class="text-xs font-bold text-navy-800 hover:text-brandGreen-500 inline-flex items-center gap-1">
                         Inquire for Lab Tie-Up <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
                     <div class="w-12 h-12 rounded-xl bg-brandGreen-500/10 text-brandGreen-500 flex items-center justify-center text-xl mb-6">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Academic Partnerships</h3>
                     <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Direct tie-ups with schools, colleges, and universities to conduct specialized practical training modules, workshops, and lab setup consultancies.
+                        Direct MoUs with schools, colleges, and universities to conduct high-impact training workshops and practical modules.
                     </p>
-                    <a href="#contact" class="text-xs font-bold text-navy-800 hover:text-brandGreen-500 inline-flex items-center gap-1">
+                    <a href="#apply" class="text-xs font-bold text-navy-800 hover:text-brandGreen-500 inline-flex items-center gap-1">
                         Inquire for Academic MoU <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
                     <div class="w-12 h-12 rounded-xl bg-brandOrange-500/10 text-brandOrange-500 flex items-center justify-center text-xl mb-6">
                         <i class="fa-solid fa-file-contract"></i>
                     </div>
-                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Contract Research Services</h3>
+                    <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">Contract Research</h3>
                     <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Executing partial or full subject-specific research projects on a contract basis, leveraging our 20+ years of product design and diagnostic troubleshooting expertise.
+                        Executing partial or full research in the subject on a contract basis, backed by 20+ years of troubleshooting and manufacturing experience.
                     </p>
-                    <a href="#contact" class="text-xs font-bold text-navy-800 hover:text-brandGreen-500 inline-flex items-center gap-1">
+                    <a href="#apply" class="text-xs font-bold text-navy-800 hover:text-brandGreen-500 inline-flex items-center gap-1">
                         Discuss Research Contract <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
@@ -463,43 +454,39 @@
         </div>
     </section>
 
-    <!-- Future Vision & Opportunities Section -->
+    <!-- Future Vision -->
     <section id="future" class="py-20 bg-navy-950 text-white relative overflow-hidden">
-        <!-- Background Glow -->
-        <div class="absolute top-0 right-1/4 w-96 h-96 bg-brandGreen-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
                 <div class="lg:col-span-6 space-y-6">
                     <span class="text-xs font-bold uppercase tracking-widest text-brandGreen-500">Visualizing The Future</span>
                     <h2 class="font-heading font-bold text-3xl sm:text-4xl text-white leading-tight">
-                        Decentralized Village Labs & Green Biotech Innovations
+                        Decentralized Village Labs & Sustainable Living
                     </h2>
                     <p class="text-slate-300 text-sm leading-relaxed">
-                        We envision small research labs established across villages and panchayats, giving priority to sustainable, self-reliant living. Small acts create monumental impact.
+                        We envision small research labs established across villages and panchayats, giving priority to sustainable, self-reliant ecosystems where local needs are met locally.
                     </p>
 
                     <div class="space-y-3 pt-2">
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-circle-dot text-brandOrange-500"></i>
-                            <span class="text-sm text-slate-200">Self-sufficient fuel and energy generation at the local level.</span>
+                            <span class="text-sm text-slate-200">Self-sufficient fuel and energy generation in every locality.</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-circle-dot text-brandGreen-500"></i>
-                            <span class="text-sm text-slate-200">High-efficiency local water recycling adopted in every household.</span>
+                            <span class="text-sm text-slate-200">Clean water and high-quality recycling adopted everywhere.</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-circle-dot text-blue-400"></i>
-                            <span class="text-sm text-slate-200">Reduced reliance on foreign diagnostic and equipment imports.</span>
+                            <span class="text-sm text-slate-200">Curtailed foreign imports, fair compensation, and eco-friendly growth.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Opportunities & Innovations Showcase -->
                 <div class="lg:col-span-6 bg-navy-900/90 border border-navy-800 p-8 rounded-3xl space-y-6">
                     <h3 class="font-heading font-bold text-xl text-white border-b border-navy-800 pb-4">
-                        Biotech Applications & Ecological Opportunities
+                        Opportunities in Ecological Biotechnology
                     </h3>
 
                     <div class="space-y-4">
@@ -508,8 +495,8 @@
                                 <i class="fa-solid fa-bacterium"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-white text-sm">Plastic Degradation Breakthroughs</h4>
-                                <p class="text-xs text-slate-300 mt-1">Leveraging organisms like <em>Pestalotiopsis microspora</em> to biologically degrade plastic waste.</p>
+                                <h4 class="font-bold text-white text-sm">Plastic Degradation</h4>
+                                <p class="text-xs text-slate-300 mt-1">Harnessing organisms like <em>Pestalotiopsis microspora</em> to degrade plastic waste safely.</p>
                             </div>
                         </div>
 
@@ -519,7 +506,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-white text-sm">Bio-construction Materials</h4>
-                                <p class="text-xs text-slate-300 mt-1">Utilizing lignocellulosic agricultural waste materials for eco-friendly building blocks.</p>
+                                <p class="text-xs text-slate-300 mt-1">Utilizing lignocellulosic agricultural residues for sustainable building materials.</p>
                             </div>
                         </div>
 
@@ -529,7 +516,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-white text-sm">Electronic & Biological Waste Recycling</h4>
-                                <p class="text-xs text-slate-300 mt-1">Sustainable methods for e-waste management and clinical diagnostic reagent disposal.</p>
+                                <p class="text-xs text-slate-300 mt-1">Adopting biotechnology across e-waste and diagnostic chemical neutralization.</p>
                             </div>
                         </div>
                     </div>
@@ -545,15 +532,15 @@
         </div>
     </section>
 
-    <!-- Application & Contact Form -->
+    <!-- Application Form -->
     <section id="apply" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 sm:p-12 shadow-lg">
                 <div class="text-center max-w-xl mx-auto mb-10">
-                    <span class="text-xs font-bold uppercase tracking-widest text-navy-800">Get In Touch</span>
-                    <h2 class="font-heading font-bold text-3xl text-navy-950 mt-1">Apply or Partner with Vyapini</h2>
+                    <span class="text-xs font-bold uppercase tracking-widest text-navy-800">Connect With Us</span>
+                    <h2 class="font-heading font-bold text-3xl text-navy-950 mt-1">Apply for Batch or Partner</h2>
                     <p class="text-slate-600 text-sm mt-2">
-                        Whether you are a student aspiring for our 4-member research batch or an institution seeking B2B collaboration, fill in your details below.
+                        Submit your details for student batch aptitude tests or institutional B2B collaboration.
                     </p>
                 </div>
 
@@ -561,7 +548,7 @@
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Full Name</label>
-                            <input type="text" required placeholder="Dr. / Mr. / Ms. Name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-navy-800 text-sm">
+                            <input type="text" required placeholder="Your Name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-navy-800 text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Email Address</label>
@@ -586,8 +573,8 @@
                     </div>
 
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Message or Research Proposal</label>
-                        <textarea rows="4" placeholder="Tell us about your background, idea, or partnership requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-navy-800 text-sm"></textarea>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Message or Proposal</label>
+                        <textarea rows="4" placeholder="Tell us about your background or requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-navy-800 text-sm"></textarea>
                     </div>
 
                     <button type="submit" class="w-full bg-navy-800 hover:bg-navy-900 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-navy-800/30 transition-all text-sm tracking-wide uppercase">
@@ -603,9 +590,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 pb-12 border-b border-navy-900">
                 <div class="md:col-span-2 space-y-4">
-                    <div class="font-heading font-extrabold text-2xl text-white tracking-tight">
-                        VYAPINI <span class="text-brandGreen-500">BIOTECH</span>
-                    </div>
+                    <img src="logo.png" alt="Vyapini Biotech Logo" class="h-16 w-auto object-contain bg-white/90 p-1.5 rounded-lg">
                     <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
                         Science • Innovation • Life. Dedicated to empowering biotechnology professionals with real-world technical skills and eco-friendly solutions.
                     </p>
@@ -640,9 +625,7 @@
         </div>
     </footer>
 
-    <!-- Interactive JS Scripts -->
     <script>
-        // Mobile menu toggle
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
 
@@ -650,7 +633,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Form Submission Alert
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for contacting Vyapini Biotech! We will reach out to you shortly.');
@@ -659,10 +641,3 @@
     </script>
 </body>
 </html>
-```eof
-
-### Key Highlights Included in the Webpage:
-* **Brand Styling:** Utilizes the Navy (`#1B365D`), Green (`#2E7D32`), and Orange (`#E65100`) palette directly inspired by your logo and tagline (*Science • Innovation • Life*).
-* **B2C Ecosystem:** Displays your training model, free-hand equipment access, 4-student batch limits, aptitude selection process, and interdisciplinary hardware/software integration.
-* **B2B Offerings:** Highlights diagnostic laboratory tie-ups, school/university academic partnerships, and contract research services.
-* **Future Vision:** Showcases decentralized village/panchayat research labs, plastic degradation (*Pestalotiopsis microspora*), lignocellulosic construction materials, and environmental self-reliance.
